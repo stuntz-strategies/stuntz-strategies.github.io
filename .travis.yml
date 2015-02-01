@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "0.10.31"
+before_install:
+  - gem update --system
+  - gem install sass
+before_script:
+  - npm install -g gulp
+  - npm install -g bower
+  - bower install
+  - git config --global user.name "Travis-CI"
+  - git config --global user.email "jon@linesandwaves.com"
+branches:
+  only:
+  - master
+script: gulp travis
+env:
+  global:
+  - GH_REF: github.com/jonlong/static-site
+  - secure: fuSuEkbSNXGuwmuViqy3+awDwTFAxfr+jIEhRkJtx1t1zMtIX+WB9goEOXYEPbCvweEE1NOoxuH2GUXt3udmttlbq1lt+iXEpXVJHVjKfv9KgrBurIFnvOTQ7JdKK0stPFgRs2zSl1BlkxR88quMvD6EMLvobmy+ZZpATOxCPYM=
