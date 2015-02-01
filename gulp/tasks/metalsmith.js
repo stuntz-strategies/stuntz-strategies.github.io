@@ -16,7 +16,6 @@ var path = require('path');
 var swig = require('swig');
 var swigExtras = require('swig-extras');
 var config = require('../../config');
-var debug = require('gulp-debug');
 var tap = require('gulp-tap');
 
 var NODE_ENV = process.env.NODE_ENV || 'development';
