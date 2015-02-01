@@ -16,6 +16,8 @@ var path = require('path');
 var swig = require('swig');
 var swigExtras = require('swig-extras');
 var config = require('../../config');
+var debug = require('gulp-debug');
+var tap = require('gulp-tap');
 
 var NODE_ENV = process.env.NODE_ENV || 'development';
 var BASE_URL = process.env.BASE_URL || config.blog.baseURL;
@@ -61,12 +63,13 @@ gulp.task('metalsmith', function() {
     }))
     .pipe(frontMatterFilter)
     // grab files with front matter and assign them as a property so metalsmith will find it
-    .pipe(frontMatter({
-      property: 'frontMatter'
-    })).on('data', function(file) {
+    .pipe(frontMatter())
+    .pipe(tap(function(file, t) {
+      if (file.frontMatter) {
         _.assign(file, file.frontMatter);
         delete file.frontMatter;
-    })
+      }
+    }))
     // remove the filter (back to everything in /src) and let metalsmith do its thing
     .pipe(frontMatterFilter.restore())
     .pipe(
@@ -80,7 +83,7 @@ gulp.task('metalsmith', function() {
         // Use shortcodes for custom markdown tags
         .use(shortcodes({
           shortcodes: {
-              'captioned-image': function(str, params) {
+            'captioned-image': function(str, params) {
                 var image = buildCaptionedImageMarkup(params);
                 return image;
             },
