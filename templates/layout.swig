@@ -43,51 +43,53 @@
         <div class="split split--b">
 
             <section>
-                <p class="lead">This is a one-to-two sentence pitch. With over 30 years experience in government relations and investigations, Stuntz Strategies gets results.</p>
+                <p class="lead">Using over thirty years of Washington experience, including investigations, legislation, and government relations, Stuntz Strategies helps get results.</p>
             </section>
 
             <section>
-                <h2>Headline Style</h2>
-                <p>Reid Stuntz's legislative practice focuses on health, energy, environmental, and telecommunications issues. Reid also is a Co-chair of the firm's oversight and investigations working group.</p>
-                <p>From 1997-2007, Reid served as Minority Staff Director and Chief Counsel to John D. Dingell, then-ranking Democrat of the U.S. House Committee on Energy and Commerce. In that position, he directed operations of a 30-person staff in support of Democratic committee members and handled a variety of legislative, investigative, political, policy, and procedural matters.</p>
+                <h2>Investigative and Legislative Matters</h2>
+                <p>Stuntz Strategies provides experienced, knowledgeable, and objective strategic and tactical advice drawing in large part on eighteen years as a House Energy and Commerce Committee staffer, and on another seventeen years as an attorney working on congressional and other government investigations.</p>
+                <p>For fourteen years of his tenure on the Hill, Reid Stuntz worked with Chairman, and later Ranking Member, John D. Dingell on a daily basis as Staff Director – first for the Subcommittee on Oversight and Investigations (holding 80 investigative hearings in four years) and then for the Full Committee for ten years.</p>
+                <p>After leaving federal service in early 2007, Reid joined Hogan and Hartson (now Hogan Lovells) as a partner, and became Of Counsel to that firm in late 2009.  He was co-leader of the Congressional Investigations practice (working with over 30 clients on investigations by nine different committees) and worked on many government relations matters (for more than 20 clients) with the Legislative Group.</p>
+                <p>Reid left the practice of law in December 2014, and established Stuntz Strategies in January 2015.</p>
             </section>
 
             <section>
 
                 <div class="row">
 
-                    <div class="col-lg-6">
-                        <h2>Areas of Focus</h2>
-                        <ul>
+                    <div class="col-md-6 col-sm-4 col-lg-5">
+                        <h2>Issue Areas</h2>
+                        <ul class="list">
+                            <li>
+                                <p>Energy</p>
+                            </li>
+                            <li>
+                                <p>Environment</p>
+                            </li>
                             <li>
                                 <p>Health</p>
                             </li>
                             <li>
-                                <p>Energy</p>
-                            </li>
-                            <li>
-                                <p>Environmental</p>
-                            </li>
-                            <li>
-                                <p>Congressional Investigations</p>
+                                <p>Telecommunications</p>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="col-lg-6">
-                        <h2>Practices</h2>
-                        <ul>
+                    <div class="col-md-6 col-sm-8 col-lg-7">
+                        <h2>Investigative Committees</h2>
+                        <ul class="list">
                             <li>
-                                <p>Legislation</p>
+                                <p>House Committee on Energy and Commerce</p>
                             </li>
                             <li>
-                                <p>Political Law Compliance</p>
+                                <p>House Committee on Oversight and Government Reform</p>
                             </li>
                             <li>
-                                <p>Climate Change</p>
+                                <p>Senate Committee on Finance</p>
                             </li>
                             <li>
-                                <p>Energy</p>
+                                <p>Senate Permanent Subcommittee on Investigations</p>
                             </li>
                         </ul>
                     </div>
@@ -98,9 +100,37 @@
 
             <section>
 
+                <h2>Contact Information</h2>
+                <div class="row contact">
+                    <div class="col-lg-6">
+                        <p class="contact__detail">
+                            1111 Pennsylvania Ave <br>
+                            Suite 405 <br>
+                            Washington, DC 20004
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="contact__detail">
+                            <a class="no-decoration" href="tel:2022914867">202.291.4867</a>
+                        </p>
+                        <p class="contact__detail">
+                            <a href="mailto:reid@stuntzstrategies.com">reid@stuntzstrategies.com</a>
+                        </p>
+                    </div>
+                </div>
+
             </section>
 
         </div>
+
+        <div class="map">
+            <div class="flexible-embed">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.248356184413!2d-77.0275898!3d38.895435600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b78fe259a7fb%3A0x4d9ef824746497e7!2s1111+Pennsylvania+Ave+NW%2C+Washington%2C+DC+20004!5e0!3m2!1sen!2sus!4v1422849275912" width="600" height="450" frameborder="0" style="border:0"></iframe>
+            </div>
+
+        </div>
+
+
 
         {% block scripts %}{% endblock %}
 

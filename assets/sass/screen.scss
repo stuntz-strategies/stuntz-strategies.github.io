@@ -27,6 +27,24 @@
 
 @import "mixins/breakpoints";
 
+.flexible-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+
+    iframe,
+    object,
+    embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
 /*------------------------------------*\
     #Generic
 \*------------------------------------*/
@@ -43,6 +61,10 @@ li {
 /*------------------------------------*\
     #Base
 \*------------------------------------*/
+
+body {
+    background: $secondary;
+}
 
 /**
  * Type
@@ -76,7 +98,7 @@ h2 {
  */
 
 section {
-    margin-top: em(60);
+    margin-top: em(40);
 
     &:before {
         content: '';
@@ -84,7 +106,7 @@ section {
         display: block;
         height: em(5);
         width: em(150);
-        margin: 0 auto em(65);
+        margin: 0 auto em(50);
     }
 
     &:first-child {
@@ -92,6 +114,22 @@ section {
 
         &:before {
             display: none;
+        }
+    }
+
+    @include screen-md {
+        margin-top: em(50);
+
+        &:before {
+            margin-bottom: em(60);
+        }
+    }
+
+    @include screen-lg {
+        margin-top: em(60);
+
+        &:before {
+            margin-bottom: em(70);
         }
     }
 }
@@ -109,7 +147,8 @@ section {
     color: $tertiary;
     text-transform: uppercase;
     letter-spacing: em(2.5, 18);
-    margin-bottom: em(12, 18);
+    margin-bottom: em(20, 18);
+    line-height: em(22, 18);
     font: {
         family: $sans;
         size: em(18);
@@ -156,6 +195,25 @@ section {
     }
 }
 
+/**
+ * Layout
+ */
+
+.no-gutter {
+    margin-left: em(-30);
+    margin-right: em(-30);
+
+    @include screen-md {
+        margin-left: em(-40);
+        margin-right: em(-40);
+    }
+
+    @include screen-lg {
+        margin-left: em(-50);
+        margin-right: em(-50);
+    }
+}
+
 /*------------------------------------*\
     #Components
 \*------------------------------------*/
@@ -164,11 +222,17 @@ section {
 
     &--a {
         background: $primary;
+        position: relative;
+        z-index: 2;
     }
 
     &--b {
-        background: $secondary;
         padding: em(30);
+        margin-bottom: 400px;
+        z-index: 2;
+        position: relative;
+        background: $secondary;
+        box-shadow: 0 5px 5px rgba(0,0,0,.3);
     }
 
     @include screen-sm {
@@ -248,10 +312,15 @@ section {
         padding: em(30);
         background: darken($secondary, 4%);
 
+        & .headline {
+            margin-bottom: em(11);
+        }
+
         @include screen-sm {
             margin-top: em(58);
             padding: 0;
             background: none;
+            margin-bottom: em(11);
 
             & .headline {
                 display: block;
@@ -259,6 +328,8 @@ section {
         }
 
         @include screen-md-only {
+            margin-bottom: 0;
+
             & .headline {
                 display: inline-block;
                 margin: em(-1) em(20) 0 0;
@@ -279,6 +350,11 @@ section {
 
         &__detail {
             margin: 0;
+            font-family: $serif;
+
+            @include screen-sm {
+                font-size: em(16);
+            }
 
             @include screen-sm {
                 display: inline-block;
@@ -287,8 +363,41 @@ section {
 
             @include screen-lg {
                 display: block;
+                font-size: em(18);
             }
         }
+}
+
+.list {
+
+    p,
+    li {
+        line-height: normal;
+    }
+
+    li {
+        margin-top: em(15);
+        &:first-child {
+            margin: 0;
+        }
+    }
+}
+
+.contact {
+    &__detail {
+        margin: 0;
+    }
+}
+
+.map {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    @include screen-lg {
+        width: 50%;
+    }
 }
 
 /*------------------------------------*\
