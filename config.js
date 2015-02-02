@@ -1,9 +1,9 @@
 var config = {
   blog: {
-    title: 'Static Site Template',
+    title: 'Stuntz Strategies',
     baseURL: '//sample.github.io/'
   },
-  repo: 'jonlong/static-site',
+  repo: 'jonlong/stuntz-strategies',
   deployBranch: 'gh-pages',
   port: 3000,
   paths: {

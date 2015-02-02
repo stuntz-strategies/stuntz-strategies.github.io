@@ -13,6 +13,7 @@
 
         <link rel="stylesheet" href="/assets/css/screen.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600|Merriweather:300italic,700' rel='stylesheet' type='text/css'>
+        <meta name="robots" content="noindex" />
     </head>
     <body>
 
@@ -52,7 +53,9 @@
             </section>
 
             <section>
+
                 <div class="row">
+
                     <div class="col-lg-6">
                         <h2>Areas of Focus</h2>
                         <ul>
@@ -70,6 +73,7 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="col-lg-6">
                         <h2>Practices</h2>
                         <ul>
@@ -87,7 +91,9 @@
                             </li>
                         </ul>
                     </div>
+
                 </div>
+
             </section>
 
             <section>
