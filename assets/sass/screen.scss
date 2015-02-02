@@ -12,7 +12,7 @@
  * Libs
  */
 
-@import "foundation/scss/foundation";
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
 
 /**
  * Functions
@@ -25,26 +25,271 @@
  * Mixins
  */
 
+@import "mixins/breakpoints";
 
 /*------------------------------------*\
     #Generic
 \*------------------------------------*/
 
+h1, h2, h3, h4, h5, h6, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
 
 /*------------------------------------*\
     #Base
 \*------------------------------------*/
 
+/**
+ * Type
+ */
+
+p {
+    @extend %copy;
+    margin: 0;
+
+    & + p {
+        margin-top: em(25);
+    }
+}
+
+a {
+    color: $gray;
+    text-decoration: underline;
+    font-style: italic;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+h2 {
+    @extend %headline;
+}
+
+/**
+ * Layout
+ */
+
+section {
+    margin-top: em(60);
+
+    &:before {
+        content: '';
+        background: $primary;
+        display: block;
+        height: em(5);
+        width: em(150);
+        margin: 0 auto em(65);
+    }
+
+    &:first-child {
+        margin: 0;
+
+        &:before {
+            display: none;
+        }
+    }
+}
 
 /*------------------------------------*\
     #Objects
 \*------------------------------------*/
 
+/**
+ * Type
+ */
+
+%headline,
+.headline {
+    color: $tertiary;
+    text-transform: uppercase;
+    letter-spacing: em(2.5, 18);
+    margin-bottom: em(12, 18);
+    font: {
+        family: $sans;
+        size: em(18);
+    }
+
+    &--alt {
+        color: $white;
+    }
+}
+
+%lead,
+.lead {
+    color: $gray;
+    line-height: em(48, 24);
+    margin: 0;
+    font: {
+        family: $serif;
+        style: italic;
+        size: em(24);
+    }
+}
+
+%copy,
+.copy {
+    color: $white;
+    line-height: em(35, 18);
+    font: {
+        family: $sans;
+        size: em(18);
+    }
+}
+
+%emphasis,
+.emphasis {
+
+}
+
+.no-decoration,
+.no-decoration {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
 
 /*------------------------------------*\
     #Components
 \*------------------------------------*/
 
+.split {
+
+    &--a {
+        background: $primary;
+    }
+
+    &--b {
+        background: $secondary;
+        padding: em(30);
+    }
+
+    @include screen-sm {
+        &--a {
+            padding: em(30);
+        }
+    }
+
+    @include screen-md {
+        &--a,
+        &--b {
+            padding: em(40);
+        }
+    }
+
+    @include screen-lg {
+        top: 0;
+        width: 50%;
+
+        &--a {
+            padding: em(100);
+            right: 0;
+            bottom: 0;
+            position: fixed;
+        }
+
+        &--b {
+            padding: em(50);
+            left: 0;
+            position: absolute;
+        }
+    }
+}
+
+.page-head {
+
+    &__logo {
+        color: $white;
+        border-bottom: 2px solid $tertiary;
+        padding-bottom: em(15, 45);
+        margin-bottom: em(12, 45);
+        font: {
+            family: $serif;
+            weight: 600;
+            size: em(45);
+        }
+
+        @include screen-lg {
+            padding-bottom: em(15, 45);
+            margin-bottom: em(12, 66);
+            font-size: em(66);
+        }
+    }
+
+    &__masthead {
+        padding: em(30);
+
+        @include screen-sm {
+            padding: 0;
+        }
+
+        @include screen-lg {
+            margin-top: 15%;
+        }
+    }
+
+        &__tagline {
+            @extend %lead;
+
+            @include screen-md-and-below {
+                font-size: em(18);
+            }
+        }
+
+    &__details {
+
+        padding: em(30);
+        background: darken($secondary, 4%);
+
+        @include screen-sm {
+            margin-top: em(58);
+            padding: 0;
+            background: none;
+
+            & .headline {
+                display: block;
+            }
+        }
+
+        @include screen-md-only {
+            & .headline {
+                display: inline-block;
+                margin: em(-1) em(20) 0 0;
+            }
+        }
+
+        @include screen-md-and-below {
+            & .headline {
+                font-size: em(15);
+            }
+        }
+
+        @include screen-lg {
+            position: absolute;
+            bottom: em(50);
+        }
+    }
+
+        &__detail {
+            margin: 0;
+
+            @include screen-sm {
+                display: inline-block;
+                margin-right: em(20);
+            }
+
+            @include screen-lg {
+                display: block;
+            }
+        }
+}
 
 /*------------------------------------*\
     #Trumps

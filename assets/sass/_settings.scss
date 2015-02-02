@@ -10,18 +10,22 @@
  * Colors
  */
 
-$primary: #fff;
-$secondary: #6BA2E1;
+$primary: #021936;
+$secondary: #0E2C55;
+$tertiary: #FAB150;
+
+$white: #fff;
+$gray: #919FB2;
 
 /**
  * Margins
  */
 
-$gutterSize: 25px;
 
 /**
  * Fonts
  */
 
-$headlineFont: 'Roboto Slab', serif;
-$copyFont: 'Open Sans', sans-serif;
+$font-size-base: 16px;
+$serif: 'Merriweather', georgia, serif;
+$sans: 'Open Sans', 'Helvetica Neue', helvetica, sans-serif;

@@ -42,3 +42,33 @@
     @content;
   }
 }
+
+@mixin screen-lg {
+  @media only screen and (min-width: $screen-md) {
+    @content;
+  }
+}
+
+@mixin screen-xl {
+  @media only screen and (min-width: $screen-lg) {
+    @content;
+  }
+}
+
+@mixin screen-md-and-below {
+  @media only screen and (max-width: $screen-md) {
+    @content;
+  }
+}
+
+@mixin screen-md-only {
+  @media only screen and (max-width: $screen-md) and (min-width: $screen-sm) {
+    @content;
+  }
+}
+
+@mixin screen-sm-only {
+  @media only screen and (max-width: $screen-sm) and (min-width: $screen-xs) {
+    @content;
+  }
+}
