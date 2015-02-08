@@ -1,12 +1,4 @@
 /**
- * Breakpoints
- *
- * Set in ems to enable different layouts at different zoom levels
- * http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/
- *
- */
-
-/**
  * Colors
  */
 
@@ -18,9 +10,10 @@ $white: #fff;
 $gray: #919FB2;
 
 /**
- * Margins
+ * Extra Breakpoints
  */
 
+$screen-xl: 1600px;
 
 /**
  * Fonts

@@ -13,6 +13,7 @@
  */
 
 @import "bootstrap-sass/assets/stylesheets/bootstrap";
+@import "libs/bootstrap-xl";
 
 /**
  * Functions
@@ -43,7 +44,6 @@
         height: 100%;
     }
 }
-
 
 /*------------------------------------*\
     #Generic
@@ -195,6 +195,18 @@ section {
     }
 }
 
+.subhead {
+    font: {
+        family: $serif;
+        style: normal;
+        size: em(20);
+    }
+
+    + p {
+        margin-top: em(10);
+    }
+}
+
 /**
  * Layout
  */
@@ -228,11 +240,9 @@ section {
 
     &--b {
         padding: em(30);
-        margin-bottom: 400px;
         z-index: 2;
         position: relative;
         background: $secondary;
-        box-shadow: 0 5px 5px rgba(0,0,0,.3);
     }
 
     @include screen-sm {
@@ -327,18 +337,13 @@ section {
             }
         }
 
-        @include screen-md-only {
+        @include screen-md-and-below {
             margin-bottom: 0;
 
             & .headline {
+                font-size: em(15);
                 display: inline-block;
                 margin: em(-1) em(20) 0 0;
-            }
-        }
-
-        @include screen-md-and-below {
-            & .headline {
-                font-size: em(15);
             }
         }
 
@@ -354,9 +359,6 @@ section {
 
             @include screen-sm {
                 font-size: em(16);
-            }
-
-            @include screen-sm {
                 display: inline-block;
                 margin-right: em(20);
             }
@@ -370,17 +372,29 @@ section {
 
 .list {
 
-    p,
-    li {
-        line-height: normal;
-    }
-
     li {
         margin-top: em(15);
         &:first-child {
             margin: 0;
         }
     }
+
+    &--blocks {
+        li {
+            margin-top: em(25);
+            &:first-child {
+                margin: 0;
+            }
+        }
+    }
+
+    &--single-line {
+        p,
+        li {
+            line-height: normal;
+        }
+    }
+
 }
 
 .contact {
@@ -400,8 +414,49 @@ section {
     }
 }
 
+.focus-areas {
+
+    &__list {
+        margin-top: em(40);
+
+        &:first-child {
+            margin: 0;
+        }
+
+        @include screen-sm {
+            margin: 0;
+        }
+
+        @include screen-lg {
+            margin-top: em(40);
+        }
+
+        @include screen-xl {
+            margin: 0;
+        }
+    }
+}
+
 /*------------------------------------*\
     #Trumps
 \*------------------------------------*/
 
+.captioned-image {
+    margin: em(35) 0;
 
+    img {
+        border: 5px solid $primary;
+    }
+}
+
+.caption {
+    color: $gray;
+    border-top: 3px solid $tertiary;
+    line-height: 1.4;
+    padding-top: em(10);
+    font: {
+        family: $serif;
+        size: em(15);
+        style: italic;
+    }
+}
