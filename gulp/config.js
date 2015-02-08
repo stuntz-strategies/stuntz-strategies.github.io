@@ -41,6 +41,11 @@ module.exports = {
     }]
   },
 
+  copy: {
+    src: appConfig.paths.src.assets + '/resources/**',
+    dest: appConfig.paths.build.assets + '/resources'
+  },
+
   modernizr: {
     dest: appConfig.paths.build.js + '/libs'
   }

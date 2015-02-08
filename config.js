@@ -22,6 +22,7 @@ var config = {
     },
     build: {
       base: './build',
+      assets: './build/assets',
       css: './build/assets/css',
       html: './build/**/*.html',
       images: './build/assets/images',

@@ -1,7 +1,7 @@
 var gulp = require('gulp');
-var config = require('../../config');
+var config     = require('../config').copy;
 
 gulp.task('copy', function() {
-  return gulp.src(config.paths.src.components + '/**/*.js')
-    .pipe(gulp.dest(config.paths.build.js + '/libs/components'));
+  return gulp.src(config.src)
+    .pipe(gulp.dest(config.dest));
 });

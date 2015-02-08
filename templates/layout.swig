@@ -116,11 +116,11 @@
 
                     <ul class="list list--blocks">
                         <li>
-                            <h3 class="subhead"><a href="">Congressional Oversight and Investigations 101</a></h3>
+                            <h3 class="subhead"><a href="/assets/resources/congressional-oversight-and-investigations-101.pdf" title="PDF: Congressional Oversight and Investigations 101">Congressional Oversight and Investigations 101</a></h3>
                             <p>Published during Mr. Stuntz's tenure at Hogan Lovell; appears in <em>The Health Lawyer</em>, Vol. 20, No. 3, February 2008</p>
                         </li>
                         <li>
-                            <h3 class="subhead"><a href="">R&eacute;sum&eacute;</a></h3>
+                            <h3 class="subhead"><a href="/assets/resources/resume.pdf" title="PDF: Resume">R&eacute;sum&eacute;</a></h3>
                         </li>
                     </ul>
 
