@@ -1,6 +1,6 @@
-# Static Site
+# stuntzstrategies.com
 
-[![Build Status](https://travis-ci.org/jonlong/static-site.svg?branch=master)](https://travis-ci.org/jonlong/static-site)
+[![Build Status](https://travis-ci.org/stuntz-strategies/stuntz-strategies.github.io.svg?branch=master)](https://travis-ci.org/stuntz-strategies/stuntz-strategies.github.io)
 
 Javascript-based static site scaffolding. Auto-deploys public repos to GitHub Pages via TravisCI, or with one command locally.
 
