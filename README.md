@@ -24,6 +24,8 @@ Alternatively, running `gulp deploy` from your local repository will compile and
 
 ### Install Dependencies
 
+- `gem install bundler`
+- `bundle install`
 - `npm install -g gulp`
 - `npm install -g bower`
 - `bower install`
