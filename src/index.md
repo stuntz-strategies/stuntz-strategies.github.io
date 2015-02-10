@@ -1,11 +1,11 @@
 ---
 title: Stuntz Strategies LLC
 lead: Using over thirty years of Washington experience &mdash; including investigations, legislation, and government relations &mdash; Stuntz Strategies helps get results.
-phone: 202-291-4867
+phone: 202-638-6952
 email: reid@stuntzstrategies.com
 address: |
          601 Pennsylvania Ave, NW
-         Suite 900, South Building
+         Suite 900 – South Building
          Washington, DC 20004
 issues:
     title: Issue Areas of Focus
@@ -25,8 +25,8 @@ resources:
     - title: Congressional Oversight and Investigations 101
       link: congressional-oversight-and-investigations-101.pdf
       type: PDF
-      text: Published when Mr. Stuntz was at Hogan and Hartson (now Hogan Lovell); appears in *The Health Lawyer*, Vol. 20, No. 3, February 2008
-    - title: R&eacute;sum&eacute;
+      text: Published when Mr. Stuntz was at Hogan and Hartson (now Hogan Lovells); appears in *The Health Lawyer*, Vol. 20, No. 3, February 2008
+    - title: Resum&eacute;
       link: resume.pdf
       type: PDF
 template: index.swig
