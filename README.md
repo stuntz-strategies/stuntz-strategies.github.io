@@ -4,7 +4,7 @@
 
 ## Overview
 
-Stuntzstrategies.com is managed on GitHub and hosted with GitHub Pages.
+[Stuntzstrategies.com](http://stuntzstrategies.com) is managed on GitHub and hosted with GitHub Pages.
 
 It's built using a Javascript-based [static site framework](https://github.com/jonlong/static-site) (similar to [Jekyll](http://jekyllrb.com)), and auto-deploys changes via [TravisCI](https://travis-ci.org/stuntz-strategies/stuntz-strategies.github.io/builds) (or with one command locally).
 
