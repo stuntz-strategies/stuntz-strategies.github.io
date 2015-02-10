@@ -35,6 +35,7 @@ var buildCaptionedImageMarkup = function(params) {
 
 swig.setDefaults({ cache: false });
 swigExtras.useFilter(swig, 'markdown');
+swigExtras.useFilter(swig, 'nl2br');
 
 /**
  * Metalsmith task

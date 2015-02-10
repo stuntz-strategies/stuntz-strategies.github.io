@@ -110,7 +110,7 @@
                 <div class="row contact">
                     <div class="col-lg-6 col-sm-4">
                         <p class="contact__detail">
-                            {{ address }}
+                            {{ address | nl2br }}
                         </p>
                     </div>
                     <div class="col-lg-6 col-sm-8">
