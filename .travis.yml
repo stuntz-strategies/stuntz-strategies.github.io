@@ -13,9 +13,9 @@ before_script:
   - git config --global user.email "jon@linesandwaves.com"
 branches:
   only:
-  - master
+  - source
 script: gulp travis
 env:
   global:
-  - GH_REF: github.com/jonlong/static-site
-  - secure: fuSuEkbSNXGuwmuViqy3+awDwTFAxfr+jIEhRkJtx1t1zMtIX+WB9goEOXYEPbCvweEE1NOoxuH2GUXt3udmttlbq1lt+iXEpXVJHVjKfv9KgrBurIFnvOTQ7JdKK0stPFgRs2zSl1BlkxR88quMvD6EMLvobmy+ZZpATOxCPYM=
+  - GH_REF: github.com/stuntz-strategies/stuntz-strategies.github.io
+  - secure: mzaMRpYQptneoX9Ob7hEEjwXIeNVXq2LzWmrCE3en0tWWUufbP+yZtBvBYLnSGGgSpbeJJsZfgss1SVec+9OOr5HuVSdV/9Fzv/nMxo4krphDtdoifo+B7hxy0d+T6EnkXKH5sP8Y7r2gmjsnAyJPmPEBbhtJVeNO5g6/AtyxIQ=
