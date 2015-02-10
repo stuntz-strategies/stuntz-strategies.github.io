@@ -1,10 +1,10 @@
-# stuntzstrategies.com
+# [StuntzStrategies.com](http://stuntzstrategies.com)
 
 [![Build Status](https://travis-ci.org/stuntz-strategies/stuntz-strategies.github.io.svg?branch=master)](https://travis-ci.org/stuntz-strategies/stuntz-strategies.github.io)
 
 ## Overview
 
-[Stuntzstrategies.com](http://stuntzstrategies.com) is managed on GitHub and hosted with GitHub Pages.
+[StuntzStrategies.com](http://stuntzstrategies.com) is managed on GitHub and hosted with GitHub Pages.
 
 It's built using a Javascript-based [static site framework](https://github.com/jonlong/static-site) (similar to [Jekyll](http://jekyllrb.com)), and auto-deploys changes via [TravisCI](https://travis-ci.org/stuntz-strategies/stuntz-strategies.github.io/builds) (or with one command locally).
 
