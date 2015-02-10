@@ -1,10 +1,10 @@
 var config = {
   blog: {
     title: 'Stuntz Strategies',
-    baseURL: '//sample.github.io/'
+    baseURL: '//stuntzstrategies.com/'
   },
-  repo: 'jonlong/stuntz-strategies',
-  deployBranch: 'gh-pages',
+  repo: 'stuntz-strategies/stuntz-strategies.github.io',
+  deployBranch: 'master',
   port: 3000,
   paths: {
     src: {
