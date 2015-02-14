@@ -1,7 +1,11 @@
 var gulp = require('gulp');
-var config     = require('../config').copy;
+var config = require('../config').copy;
 
 gulp.task('copy', function() {
-  return gulp.src(config.src)
-    .pipe(gulp.dest(config.dest));
+
+  gulp.src(config.bower.src)
+    .pipe(gulp.dest(config.bower.dest));
+
+  return gulp.src(config.resources.src)
+    .pipe(gulp.dest(config.resources.dest));
 });

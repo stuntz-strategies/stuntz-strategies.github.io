@@ -13,6 +13,12 @@
 
         <link rel="stylesheet" href="/assets/css/screen.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600|Merriweather:300italic,700' rel='stylesheet' type='text/css'>
+
+        <!--[if lte IE 8]>
+            <script src="/assets/js/libs/html5shiv.min.js"></script>
+            <script src="/assets/js/libs/respond.min.js"></script>
+        <![endif]-->
+
         <meta name="robots" content="noindex" />
     </head>
     <body>

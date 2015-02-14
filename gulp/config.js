@@ -42,8 +42,17 @@ module.exports = {
   },
 
   copy: {
-    src: appConfig.paths.src.assets + '/resources/**',
-    dest: appConfig.paths.build.assets + '/resources'
+    resources: {
+      src: appConfig.paths.src.assets + '/resources/**',
+      dest: appConfig.paths.build.assets + '/resources'
+    },
+    bower: {
+      src: [
+        appConfig.paths.src.components + '/html5shiv/dist/html5shiv.min.js',
+        appConfig.paths.src.components + '/respond/dest/respond.min.js',
+      ],
+      dest: appConfig.paths.build.js + '/libs'
+    }
   },
 
   modernizr: {
