@@ -1,0 +1,46 @@
+.split {
+
+    &--a {
+        background: $primary;
+        position: relative;
+        z-index: 2;
+    }
+
+    &--b {
+        padding: em(30);
+        z-index: 2;
+        position: relative;
+        background: $secondary;
+    }
+
+    @include screen-sm {
+        &--a {
+            padding: em(30);
+        }
+    }
+
+    @include screen-md {
+        &--a,
+        &--b {
+            padding: em(40);
+        }
+    }
+
+    @include screen-lg {
+        top: 0;
+        width: 50%;
+
+        &--a {
+            padding: em(100);
+            right: 0;
+            bottom: 0;
+            position: fixed;
+        }
+
+        &--b {
+            padding: em(50);
+            left: 0;
+            position: absolute;
+        }
+    }
+}

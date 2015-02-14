@@ -17,7 +17,8 @@ var config = {
       components: './assets/components',
       js: './assets/js',
       sassIncludePaths: [
-        './assets/components'
+        './assets/components',
+        './assets/components/bootstrap-sass/assets/stylesheets'
       ]
     },
     build: {

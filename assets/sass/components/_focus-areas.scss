@@ -1,0 +1,22 @@
+.focus-areas {
+
+    &__list {
+        margin-top: em(40);
+
+        &:first-child {
+            margin: 0;
+        }
+
+        @include screen-sm {
+            margin: 0;
+        }
+
+        @include screen-lg {
+            margin-top: em(40);
+        }
+
+        @include screen-xl {
+            margin: 0;
+        }
+    }
+}

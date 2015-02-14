@@ -1,0 +1,73 @@
+%headline,
+.headline {
+    color: $tertiary;
+    text-transform: uppercase;
+    letter-spacing: em(2.5, 18);
+    margin-bottom: em(20, 18);
+    line-height: em(22, 18);
+    font: {
+        family: $sans;
+        size: em(18);
+    }
+
+    &--alt {
+        color: $white;
+    }
+}
+
+%lead,
+.lead {
+    color: $gray;
+    line-height: em(48, 24);
+    margin: 0;
+    font: {
+        family: $serif;
+        style: italic;
+        size: em(24);
+    }
+}
+
+%copy,
+.copy {
+    color: $white;
+    line-height: em(35, 18);
+    font: {
+        family: $sans;
+        size: em(18);
+    }
+}
+
+%no-decoration,
+.no-decoration {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+%subhead,
+.subhead {
+    font: {
+        family: $serif;
+        style: normal;
+        size: em(20);
+    }
+
+    + p {
+        margin-top: em(10);
+    }
+}
+
+%caption,
+.caption {
+    color: $gray;
+    border-top: 3px solid $tertiary;
+    line-height: 1.4;
+    padding-top: em(10);
+    font: {
+        family: $serif;
+        size: em(15);
+        style: italic;
+    }
+}

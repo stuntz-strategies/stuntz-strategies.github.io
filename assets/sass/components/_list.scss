@@ -1,0 +1,26 @@
+.list {
+
+    li {
+        margin-top: em(15);
+        &:first-child {
+            margin: 0;
+        }
+    }
+
+    &--blocks {
+        li {
+            margin-top: em(25);
+            &:first-child {
+                margin: 0;
+            }
+        }
+    }
+
+    &--single-line {
+        p,
+        li {
+            line-height: normal;
+        }
+    }
+
+}

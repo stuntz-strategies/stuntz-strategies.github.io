@@ -1,0 +1,81 @@
+body {
+    font-size: 16px!important;
+    background: $secondary;
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/**
+ * Type
+ */
+
+p {
+    @extend %copy;
+    margin: 0;
+
+    & + p {
+        margin-top: em(25);
+    }
+}
+
+a {
+    color: $gray;
+    text-decoration: underline;
+    font-style: italic;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+h2 {
+    @extend %headline;
+}
+
+/**
+ * Layout
+ */
+
+section {
+    margin-top: em(40);
+
+    &:before {
+        content: '';
+        background: $primary;
+        display: block;
+        height: em(5);
+        width: em(150);
+        margin: 0 auto em(50);
+    }
+
+    &:first-child {
+        margin: 0;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    @include screen-md {
+        margin-top: em(50);
+
+        &:before {
+            margin-bottom: em(60);
+        }
+    }
+
+    @include screen-lg {
+        margin-top: em(60);
+
+        &:before {
+            margin-bottom: em(70);
+        }
+    }
+}

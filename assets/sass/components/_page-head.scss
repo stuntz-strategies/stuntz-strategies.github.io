@@ -1,0 +1,88 @@
+.page-head {
+
+    &__logo {
+        color: $white;
+        border-bottom: 2px solid $tertiary;
+        padding-bottom: em(15, 45);
+        margin-bottom: em(12, 45);
+        font: {
+            family: $serif;
+            weight: 600;
+            size: em(45);
+        }
+
+        @include screen-lg {
+            padding-bottom: em(15, 45);
+            margin-bottom: em(12, 66);
+            font-size: em(66);
+        }
+    }
+
+    &__masthead {
+        padding: em(30);
+
+        @include screen-sm {
+            padding: 0;
+        }
+
+        @include screen-lg {
+            margin-top: 15%;
+        }
+    }
+
+        &__tagline {
+            @extend %lead;
+
+            @include screen-md-and-below {
+                font-size: em(18);
+            }
+        }
+
+    &__details {
+
+        padding: em(30);
+        background: darken($secondary, 4%);
+
+        & .headline {
+            margin-bottom: em(9);
+        }
+
+        @include screen-sm {
+            margin-top: em(58);
+            padding: 0;
+            background: none;
+            margin-bottom: 0;
+
+            & .headline {
+                display: inline-block;
+                font-size: em(15);
+                margin: em(-1) em(20) 0 0;
+            }
+        }
+
+        @include screen-lg {
+            position: absolute;
+            bottom: em(50);
+
+            & .headline {
+                margin-bottom: em(11);
+            }
+        }
+    }
+
+        &__detail {
+            margin: 0;
+            font-family: $serif;
+
+            @include screen-sm {
+                font-size: em(16);
+                display: inline-block;
+                margin-right: em(20);
+            }
+
+            @include screen-lg {
+                display: block;
+                font-size: em(18);
+            }
+        }
+}

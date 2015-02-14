@@ -1,0 +1,10 @@
+.map {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    @include screen-lg {
+        width: 50%;
+    }
+}
