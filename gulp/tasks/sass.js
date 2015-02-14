@@ -9,7 +9,8 @@ gulp.task('sass', ['images'], function () {
     .pipe(sass({
       // compass: true,
       bundleExec: true,
-      loadPath: config.loadPaths
+      loadPath: config.loadPaths,
+      style: 'compressed'
     }))
     .on('error', handleErrors)
     // .pipe(pixrem())
