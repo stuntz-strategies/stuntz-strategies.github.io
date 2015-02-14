@@ -1,5 +1,6 @@
 ---
 title: Stuntz Strategies LLC
+description: Using over thirty years of Washington experience &mdash; including investigations, legislation, and government relations &mdash; Stuntz Strategies helps get results.
 lead: Using over thirty years of Washington experience &mdash; including investigations, legislation, and government relations &mdash; Stuntz Strategies helps get results.
 phone: 202-638-6952
 email: reid@stuntzstrategies.com
