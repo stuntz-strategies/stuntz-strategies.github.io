@@ -25,7 +25,7 @@ resources:
     - title: Congressional Oversight and Investigations 101
       link: congressional-oversight-and-investigations-101.pdf
       type: PDF
-      text: Published when Mr. Stuntz was at Hogan and Hartson (now Hogan Lovells); appears in *The Health Lawyer*, Vol. 20, No. 3, February 2008
+      text: Published when Mr. Stuntz was at Hogan and Hartson (now Hogan Lovells); appeared in *The Health Lawyer*, Vol. 20, No. 3, February 2008
     - title: Resum&eacute;
       link: resume.pdf
       type: PDF
