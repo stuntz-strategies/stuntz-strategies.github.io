@@ -16,7 +16,7 @@ Node.js, Ruby, and [Bundler](http://bundler.io) are core dependencies.
 
 Site updates are managed through GitHub, and should always take place on the `source` branch. Live, compiled results reside on `master`.
 
-Any updates pushed to the `source` branch will trigger a TravisCI build, which compiles the static site. When the build passes, the compiled site will be pushed to the `master` branch, which automatically deploys the changes to [stuntzstrategies.com](http://stuntzstrategies.com).
+Any updates pushed to the `source` branch will trigger a TravisCI build, which compiles the static site. When the build passes, the compiled site will be pushed to the `master` branch, which automatically deploys the changes to [StuntzStrategies.com](http://stuntzstrategies.com).
 
 Alternatively, running `gulp deploy` from your local repository will compile and push your working branch to `master`.
 
@@ -46,4 +46,4 @@ Manual task for building the static site and compiling assets.
 
 `gulp deploy`
 
-Manual task for deploying built files to `master` and updating [stuntzstrategies.com](http://stuntzstrategies.com)
+Manual task for deploying built files to `master` and updating [StuntzStrategies.com](http://stuntzstrategies.com)
