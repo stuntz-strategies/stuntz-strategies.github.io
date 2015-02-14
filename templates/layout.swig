@@ -18,8 +18,6 @@
             <script src="/assets/js/libs/html5shiv.min.js"></script>
             <script src="/assets/js/libs/respond.min.js"></script>
         <![endif]-->
-
-        <meta name="robots" content="noindex" />
     </head>
     <body>
 
