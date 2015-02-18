@@ -5,7 +5,7 @@ lead: Using over thirty years of Washington experience &mdash; including investi
 phone: 202-638-6952
 email: reid@stuntzstrategies.com
 address: |
-         601 Penn Ave, NW
+         601 Pennsylvania Ave, NW
          Suite 900 – South Building
          Washington, DC 20004
 issues:
